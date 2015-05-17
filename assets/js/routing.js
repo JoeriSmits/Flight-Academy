@@ -7,6 +7,9 @@ var faApp = angular.module("faApp", ['ngRoute']).
     config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider.
+                when("/", {
+                    templateUrl: "templates/home.html"
+                }).
                 when("/home", {
                     templateUrl: "templates/home.html"
                 }).
