@@ -13,6 +13,9 @@ var faApp = angular.module("faApp", ['ngRoute']).
                 when("/aboutUs", {
                     templateUrl: "templates/about.html"
                 }).
+                when("/aboutUs/detail", {
+                    templateUrl: "templates/detailAboutUs.html"
+                }).
                 when("/404", {
                     templateUrl: "templates/404.html"
                 }).
@@ -50,6 +53,7 @@ faApp.directive('layerSlider', function () {
         link: function (scope, element, attrs) {
             App.init();
             LayerSlider.initLayerSlider();
+            OwlCarousel.initOwlCarousel();
         }
     }
 });
