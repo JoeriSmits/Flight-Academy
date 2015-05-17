@@ -19,6 +19,24 @@ var faApp = angular.module("faApp", ['ngRoute']).
                 when("/training", {
                     templateUrl: "templates/training.html"
                 }).
+                when("/subscribe", {
+                    templateUrl: "templates/subscribe.html"
+                }).
+                when("/subscribeForm", {
+                    templateUrl: "templates/subscribeForm.html"
+                }).
+                when("/activeStudents", {
+                    templateUrl: "templates/activeStudents.html"
+                }).
+                when("/graduatedStudents", {
+                    templateUrl: "templates/graduatedStudents.html"
+                }).
+                when("/whatDoStudentsSay", {
+                    templateUrl: "templates/whatDoStudentsSay.html"
+                }).
+                when("/contact", {
+                    templateUrl: "templates/contact.html"
+                }).
                 otherwise({
                     redirectTo: '/404'
                 });
