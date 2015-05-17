@@ -53,7 +53,6 @@ faApp.directive('layerSlider', function () {
         link: function (scope, element, attrs) {
             App.init();
             LayerSlider.initLayerSlider();
-            OwlCarousel.initOwlCarousel();
         }
     }
 });
